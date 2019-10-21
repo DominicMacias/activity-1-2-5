@@ -14,12 +14,12 @@ def wheel_spin():
 	balance -= placed_bet
 	reward = 0
 	reel_1, reel_2, reel_3 = [ran.choice(weighted_numbers) for i in range(3)]
-	print("spinning...")
+	print("Spinning...")
 	t.sleep(1)
 	print("You got", reel_1, reel_2, reel_3)
 	if reel_1 == reel_2 == reel_3:
 		win(3, reel_1)
-	elif reel_1 == reel_2 or reel_1 == reel_2 or reel_2 == reel_3:
+	elif reel_1 == reel_2 or reel_1 == reel_3 or reel_2 == reel_3:
 		if reel_2 == reel_3:
 			win(2, reel_2)
 		else:
@@ -27,6 +27,7 @@ def wheel_spin():
 	else:
 		print("Aww man! Looks like none of your numbers matched!")	
 
+#Extra Commands
 def list_chance():
 	print(" 1->  25.9%\n 2->  18.2%\n 3->  15.6%\n 4->  13.0%\n 5->  10.4%\n 6->  7.8%\n 7->  5.2%\n 8->  2.6%\n 9->  1.3%\n 10-> 0.0026%")
 	print(" *These are the chances for a single reel")
