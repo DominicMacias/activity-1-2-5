@@ -5,3 +5,5 @@ Slot Machine:
       based on how many tokens the user chooses to bet.
     
     - This repository contains the newest and older versions of the slot machine program.
+    
+    - Current Version: slots_savcandland.py
